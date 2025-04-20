@@ -1,18 +1,14 @@
 #include <iostream>
 using namespace std;
 
-struct Mahasiswa{
+struct Mahasiswa {
     string nim;
     string nama;
     string alamat;
 };
 
-int main(){
+int main() {
     Mahasiswa mhs;
-
-    mhs.nim = "2024014001";
-    mhs.nama = "Abra";
-    mhs.alamat = "Kasihan";
 
     cout << "Masukkan NIM       = ";
     cin >> mhs.nim;
@@ -22,7 +18,8 @@ int main(){
     cin >> mhs.alamat;
 
     cout << endl;
-    cout << "Data Mahasiswa" << endl;
+    cout << "Menampilkan Data" << endl;
+    cout << endl;
     
     cout << "NIM        = " << mhs.nim << endl;
     cout << "Nama       = " << mhs.nama << endl;
