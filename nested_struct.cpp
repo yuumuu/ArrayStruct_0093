@@ -2,8 +2,8 @@
 using namespace std;
 
 struct DetailAlamat {
-    string desa;
     string kota;
+    string provinsi;
 };
 
 struct Mahasiswa {
@@ -22,10 +22,10 @@ int main(){
         cin.ignore();
         cout << "Masukkan Nama          = ";
         getline(cin, mhs[i].nama);
-        cout << "Masukkan Alamat Desa   = ";
-        cin >> mhs[i].alamat.desa;
         cout << "Masukkan Alamat Kota   = ";
         cin >> mhs[i].alamat.kota;
+        cout << "Masukkan Alamat Provinsi   = ";
+        cin >> mhs[i].alamat.provinsi;
     }
 
     cout << endl;
@@ -36,7 +36,7 @@ int main(){
     cout << "Data Mahasiswa ke-" << i+1 << endl;
     cout << "NIM            = " << mhs[i].nim << endl;
     cout << "Nama           = " << mhs[i].nama << endl;
-    cout << "Alamat Desa    = " << mhs[i].alamat.desa << endl;
     cout << "Alamat Kota    = " << mhs[i].alamat.kota << endl;
+    cout << "Alamat Provinsi= " << mhs[i].alamat.provinsi << endl;
     }
 }
